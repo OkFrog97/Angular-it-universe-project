@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpinerUiComponent } from './spiner-ui.component';
+import { SpinnerUiComponent } from './spinner-ui.component';
 
-describe('SpinerUiComponent', () => {
-  let component: SpinerUiComponent;
-  let fixture: ComponentFixture<SpinerUiComponent>;
+describe('SpinnerUiComponent', () => {
+  let component: SpinnerUiComponent;
+  let fixture: ComponentFixture<SpinnerUiComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SpinerUiComponent ]
+      declarations: [ SpinnerUiComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SpinerUiComponent);
+    fixture = TestBed.createComponent(SpinnerUiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
