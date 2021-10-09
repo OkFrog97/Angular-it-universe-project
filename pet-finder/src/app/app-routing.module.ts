@@ -5,7 +5,7 @@ import {AuthorisationPageModule} from "./pages/authorisation-page/authorisation-
 
 const routes: Routes = [
   { path: 'auth', loadChildren: () => import("./pages/authorisation-page/authorisation-page.module").then((module) => module.AuthorisationPageModule)},
-  { path: '', loadChildren: ()=> import("./pages/main-page/main-page.module").then((module)=> module.MainPageModule)}
+  { path: '', loadChildren: () => import("./pages/main-page/main-page.module").then((module)=> module.MainPageModule)}
 ];
 
 @NgModule({
