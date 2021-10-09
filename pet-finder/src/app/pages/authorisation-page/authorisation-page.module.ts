@@ -8,9 +8,20 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatSliderModule} from '@angular/material/slider';
 import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule} from "@angular/forms";
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
-  imports: [CommonModule, AuthorisationFormModule, RegistrationFormModule, AuthorisationPageRoutingModule, MatFormFieldModule, MatSliderModule, MatInputModule, ReactiveFormsModule],
+  imports: [CommonModule,
+            AuthorisationFormModule,
+            RegistrationFormModule,
+            AuthorisationPageRoutingModule,
+            MatFormFieldModule,
+            MatSliderModule,
+            MatInputModule,
+            ReactiveFormsModule,
+            MatButtonModule],
+
   exports: [AuthorisationPageComponent],
   declarations: [AuthorisationPageComponent]
 })

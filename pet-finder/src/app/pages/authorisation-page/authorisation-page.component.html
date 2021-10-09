@@ -1,7 +1,7 @@
 <h3>Авторизация</h3>
 <div class="container">
   <div class="form">
-    <from [formGroup]="authorisationFrom">
+    <form [formGroup]="authorisationFrom">
       <div class="form__field">
         <mat-form-field appearance="fill">
           <mat-label>Имя пользователя</mat-label>
@@ -16,8 +16,10 @@
           <mat-hint>Введите пароль</mat-hint>
         </mat-form-field>
       </div>
-      <button (click)="OnCLickAuthorisation()">Авторизоваться</button>
-    </from>
+      <div class="form__submit">
+        <button mat-raised-button color="primary" (click)="OnCLickAuthorisation()">Авторизоваться</button>
+      </div>
+    </form>
   </div>
 </div>
 
