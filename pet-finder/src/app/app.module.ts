@@ -7,11 +7,13 @@ import { SpinnerUiModule } from "./components/ui-components/spiner-ui/spinner-ui
 import { AuthorisationPageModule} from "./pages/authorisation-page/authorisation-page.module";
 import { MainPageModule} from "./pages/main-page/main-page.module";
 import {RouterModule} from "@angular/router";
+import { PetCardComponent } from './components/pet-card/pet-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PetCardComponent,
   ],
   imports: [
     AppRoutingModule,
