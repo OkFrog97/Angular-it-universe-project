@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
   selector: 'app-authorisation-page',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthorisationPageComponent implements OnInit {
 
+  public authorisationFrom: FormGroup = new FormGroup({
+    userName: new FormControl(),
+    userPassword: new FormControl()
+  })
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public OnCLickAuthorisation() {
+    console.log(this.authorisationFrom.value);
   }
 
 }
